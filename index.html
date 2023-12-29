@@ -16,12 +16,12 @@
   <meta property="og:type" content="website" />
   <meta content="summary_large_image" name="twitter:card" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <meta name="google-site-verification" content="sdz4d86QkTWaWHiWkS9mtiln38Bu0wirf94l-z1MkhQ" />
+  <!--<meta name="google-site-verification" content="sdz4d86QkTWaWHiWkS9mtiln38Bu0wirf94l-z1MkhQ" /> -->
 
 
   <title>Instruct-GS2GS: Editing 3D Gaussian Splatting Scenes with Instructions</title>
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js)
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-87HN038KJT"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -30,6 +30,7 @@
 
     gtag('config', 'G-87HN038KJT');
   </script>
+   -->
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -114,14 +115,11 @@
       <div class="paragraph">
         <p>
           We propose a method for editing 3D Gaussian Splatting (3DGS) scenes with text-instructions. Given a 3DGS scene of a scene and the
-          collection
-          of images used to reconstruct it, our method uses an image-conditioned diffusion model (<a
+          collection of images used to reconstruct it, our method uses an image-conditioned diffusion model (<a
             href="https://www.timothybrooks.com/instruct-pix2pix">InstructPix2Pix</a>) to
           iteratively edit the input images while optimizing the underlying scene, resulting in an optimized 3D
-          scene that
-          respects the edit instruction. We demonstrate that our proposed method is able to edit large-scale,
-          real-world
-          scenes, and is able to accomplish more realistic, targeted edits than prior work.
+          scene that respects the edit instruction. We demonstrate that our proposed method is able to edit large-scale,
+          real-world scenes, and is able to accomplish realistic and targeted edits.
         </p>
       </div>
 
@@ -264,8 +262,8 @@
 
 
       <h2 class="section-header">Training Progression</h2>
-      <video id="body-video" muted autoplay playsinline controls loop>
-        <source id="mp4" src="data/videos/timelapse.mp4" type="video/mp4">
+      <video id="body-video" muted autoplay playsinline controls loop style="border-radius: 10px;">
+        <source id="mp4" src="data/videos/timelapse.mp4" type="video/mp4" >
       </video>
       <div class="paragraph" style="text-align: center">
         Timelapse training with Instruct-GS2GS and Instruct-NeRF2NeRF. We note that Instruct-GS2GS performs edits much faster.
